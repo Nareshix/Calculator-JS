@@ -85,12 +85,20 @@ numbers.forEach(number => {
 });
 
 
+const clearAllColours = () => {
+    operators.forEach(operator => {
+        operator.style.backgroundColor = 'white';
+    });
+}
+
 // stores num1 and operator
 operators.forEach(operator => {
     operator.addEventListener('click', () => {
+        clearAllColours();
         operatorToBeUsed = operator.textContent;
         num1 = Number(display.textContent);
         display.textContent = '';
+        operator.style.backgroundColor = 'rgb(183, 193, 202)'
     })
 });
 
