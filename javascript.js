@@ -98,7 +98,12 @@ operators.forEach(operator => {
     operator.addEventListener('click', () => {
         clearAllColours();
         operatorToBeUsed = operator.textContent;
-        num1 = Number(display.textContent);
+        
+        // If user wants to change operation, doesnt affect num1
+        if (display.textContent !== ''){
+            num1 = Number(display.textContent);
+        }
+        
         display.textContent = '';
         operator.style.backgroundColor = 'rgb(183, 193, 202)'
     })
@@ -107,7 +112,7 @@ operators.forEach(operator => {
 equal.addEventListener('click', () => {
     num2 = Number(display.textContent);
     if (num2 === 0 && operatorToBeUsed === '/'){
-    display.textContent = 'undefined';
+    display.textContent = 'NaN';
     }
     else{
     display.textContent = Math.round(operation(num1,num2,operatorToBeUsed) * 10000) /10000;
