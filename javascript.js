@@ -30,7 +30,14 @@ let operatorToBeUsed;
 let num1;
 let num2 = '';
 
+const clearAllColours = () => {
+    operators.forEach(operator => {
+        operator.style.backgroundColor = 'white';
+    });
+}
+
 clear.addEventListener('click', () => {
+    clearAllColours();
     display.textContent = '';
     num1 = undefined;
     num2 = '';
@@ -85,11 +92,6 @@ numbers.forEach(number => {
 });
 
 
-const clearAllColours = () => {
-    operators.forEach(operator => {
-        operator.style.backgroundColor = 'white';
-    });
-}
 
 // stores num1 and operator
 operators.forEach(operator => {
