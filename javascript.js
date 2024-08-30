@@ -20,6 +20,7 @@ const operation = (num1,num2, operator) => {
 
 const numbers = document.querySelectorAll('.number');
 const display = document.querySelector('#display');
+const operator = document.querySelector('.operation')
 const clear = document.querySelector('#clear')
 
 
