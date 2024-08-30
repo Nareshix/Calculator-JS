@@ -1,5 +1,9 @@
 #buttons {
     display: grid;
-    grid-template-columns: repeat(3, 40px);
-    grid-template-rows: repeat(3,40px);
+    grid-template-columns: repeat(4, 40px);
+    grid-template-rows: repeat(6,40px);
+}
+
+#display{
+    grid-column: 1/5;
 }
