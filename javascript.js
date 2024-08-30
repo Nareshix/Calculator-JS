@@ -21,9 +21,14 @@ const operation = (num1,num2, operator) => {
 const buttons = document.querySelectorAll('button');
 const display = document.querySelector('#display');
 
+
+//To display numbers only and clear
 buttons.forEach(button => {
     button.addEventListener('click', () => {
         switch (button.textContent) {
+            case 'AC':
+                display.textContent = '';
+                break;
             case '1':
                 display.textContent += '1';
                 break;
@@ -53,7 +58,8 @@ buttons.forEach(button => {
                 break;
             case '0':
                 display.textContent += '0';
-                break;
         }
     })
 });
+
+
