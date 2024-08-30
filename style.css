@@ -9,6 +9,10 @@ body {
     align-items: center;
 }
 
+#calculator{
+    border: solid 5px rgb(22, 83, 22);
+    border-radius: 5px;
+}
 
 #display {
     display: flex;
@@ -16,7 +20,9 @@ body {
     background-color: rgb(168, 166, 166);
     flex-direction: row-reverse;
     font-size: 50px;
+    border: solid 2px black;
 }
+
 #buttons {
     width: 400px;
     height:400px;
