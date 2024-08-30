@@ -1,9 +1,13 @@
 #buttons {
     display: grid;
-    grid-template-columns: repeat(4, 40px);
-    grid-template-rows: repeat(6,40px);
+    grid-template-rows: repeat(6, 40px);
+    grid-template-columns: repeat(4,40px);
 }
 
 #display{
     grid-column: 1/5;
+}
+
+#zero {
+    grid-column: 1/3;
 }
