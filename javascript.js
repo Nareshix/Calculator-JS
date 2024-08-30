@@ -23,6 +23,7 @@ const display = document.querySelector('#display');
 const operators = document.querySelectorAll('.operation');
 const clear = document.querySelector('#clear');
 const equal = document.querySelector('#equal');
+const decimal = document.querySelector('#decimal');
 
 let operatorToBeUsed;
 let num1;
@@ -30,6 +31,11 @@ let num2 = '';
 
 clear.addEventListener('click', () => display.textContent = '')
 
+decimal.addEventListener('click', () => {
+    if (display.textContent.indexOf('.') === -1){
+        display.textContent += '.';
+    }
+})
 numbers.forEach(number => {
     number.addEventListener('click', () => {
         switch (number.textContent) {
