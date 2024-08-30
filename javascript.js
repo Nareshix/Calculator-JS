@@ -112,4 +112,5 @@ equal.addEventListener('click', () => {
     else{
     display.textContent = Math.round(operation(num1,num2,operatorToBeUsed) * 10000) /10000;
     }
+    clearAllColours()
 })
