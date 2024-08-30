@@ -18,17 +18,13 @@ const operation = (num1,num2, operator) => {
     }
 }
 
-const buttons = document.querySelectorAll('button');
+const numbers = document.querySelectorAll('.number');
 const display = document.querySelector('#display');
 
 
-//To display numbers only and clear
-buttons.forEach(button => {
-    button.addEventListener('click', () => {
-        switch (button.textContent) {
-            case 'AC':
-                display.textContent = '';
-                break;
+numbers.forEach(number => {
+    number.addEventListener('click', () => {
+        switch (number.textContent) {
             case '1':
                 display.textContent += '1';
                 break;
@@ -61,5 +57,4 @@ buttons.forEach(button => {
         }
     })
 });
-
 
