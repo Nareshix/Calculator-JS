@@ -29,7 +29,11 @@ let operatorToBeUsed;
 let num1;
 let num2 = '';
 
-clear.addEventListener('click', () => display.textContent = '')
+clear.addEventListener('click', () => {
+    display.textContent = '';
+    num1 = undefined;
+    num2 = '';
+})
 
 decimal.addEventListener('click', () => {
     if (display.textContent.indexOf('.') === -1){
