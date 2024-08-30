@@ -64,3 +64,12 @@ numbers.forEach(number => {
         }
     })
 });
+
+
+// stores num1 and operator
+operators.forEach(operator => {
+    operator.addEventListener('click', () => {
+        operatorToBeUsed = operator.textContent;
+        num1 = Number(display.textContent);
+    })
+});
