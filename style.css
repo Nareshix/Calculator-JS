@@ -12,6 +12,9 @@ body {
 
 #display {
     display: flex;
+    height: 60px;
+    background-color: grey;
+
 }
 #buttons {
     width: 400px;
