@@ -33,3 +33,23 @@ body {
     grid-column: 1/3;
 } 
 
+
+.number{
+    background-color: rgb(57, 121, 121);
+}
+
+
+#decimal {
+    background-color: rgb(57, 121, 121);
+    font-weight: 900;
+}
+
+#equal,
+.operation{
+    background-color: orange;
+}
+
+#delete,
+#clear{
+    background-color: rgb(68, 195, 238);
+}

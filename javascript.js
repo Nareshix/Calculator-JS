@@ -33,7 +33,7 @@ let num2;
 
 const clearAllColours = () => {
     operators.forEach(operator => {
-        operator.style.backgroundColor = 'white';
+        operator.style.backgroundColor = 'orange';
     });
 }
 
