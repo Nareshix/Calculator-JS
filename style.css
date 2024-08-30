@@ -8,6 +8,6 @@
     grid-column: 1/5;
 }
 
-#zero {
+.zero {
     grid-column: 1/3;
 }
