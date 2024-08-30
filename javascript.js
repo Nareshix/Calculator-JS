@@ -20,12 +20,13 @@ const operation = (num1,num2, operator) => {
 
 const numbers = document.querySelectorAll('.number');
 const display = document.querySelector('#display');
-const operators = document.querySelectorAll('.operation')
-const clear = document.querySelector('#clear')
+const operators = document.querySelectorAll('.operation');
+const clear = document.querySelector('#clear');
+const equal = document.querySelector('#equal');
 
 let operatorToBeUsed;
 let num1;
-let num2;
+let num2 = '';
 
 clear.addEventListener('click', () => display.textContent = '')
 
@@ -71,5 +72,10 @@ operators.forEach(operator => {
     operator.addEventListener('click', () => {
         operatorToBeUsed = operator.textContent;
         num1 = Number(display.textContent);
+        display.textContent = '';
     })
 });
+
+equal.addEventListener('click', () => {
+    num2 = Number(display.textContent);
+})
