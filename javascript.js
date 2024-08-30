@@ -62,6 +62,7 @@ numbers.forEach(number => {
                 break;
             case '0':
                 display.textContent += '0';
+                break;
         }
     })
 });
