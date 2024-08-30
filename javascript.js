@@ -2,6 +2,7 @@ const add = (num1, num2) => num1 + num2;
 const subtract = (num1, num2) => num1 - num2;
 const multiply = (num1, num2) => num1 * num2;
 const divide = (num1, num2) => num1 / num2;
+const TEN_BILLION = 10000000000;
 
 const operation = (num1,num2, operator) => {
     switch (operator) {
@@ -115,7 +116,8 @@ equal.addEventListener('click', () => {
     display.textContent = 'NaN';
     }
     else{
-    display.textContent = Math.round(operation(num1,num2,operatorToBeUsed) * 10000) /10000;
+        // round off to 10 d.p
+    display.textContent = Math.round(operation(num1,num2,operatorToBeUsed) * TEN_BILLION) /TEN_BILLION;
     }
     clearAllColours()
 })
