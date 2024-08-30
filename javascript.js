@@ -89,5 +89,10 @@ operators.forEach(operator => {
 
 equal.addEventListener('click', () => {
     num2 = Number(display.textContent);
+    if (num2 === 0 && operatorToBeUsed === '/'){
+    display.textContent = 'undefined';
+    }
+    else{
     display.textContent = Math.round(operation(num1,num2,operatorToBeUsed) * 10000) /10000;
+    }
 })
