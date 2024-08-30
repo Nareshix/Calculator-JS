@@ -29,7 +29,7 @@ const remove = document.querySelector('#delete');
 
 let operatorToBeUsed;
 let num1;
-let num2 = '';
+let num2;
 
 const clearAllColours = () => {
     operators.forEach(operator => {
@@ -41,7 +41,7 @@ clear.addEventListener('click', () => {
     clearAllColours();
     display.textContent = '';
     num1 = undefined;
-    num2 = '';
+    num2 = undefined;
 })
 
 remove.addEventListener('click', () => {
