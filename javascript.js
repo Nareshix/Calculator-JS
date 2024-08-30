@@ -24,6 +24,7 @@ const operators = document.querySelectorAll('.operation');
 const clear = document.querySelector('#clear');
 const equal = document.querySelector('#equal');
 const decimal = document.querySelector('#decimal');
+const remove = document.querySelector('#delete');
 
 let operatorToBeUsed;
 let num1;
@@ -33,6 +34,12 @@ clear.addEventListener('click', () => {
     display.textContent = '';
     num1 = undefined;
     num2 = '';
+})
+
+remove.addEventListener('click', () => {
+    let tmpNum = Number(display.textContent);
+    tmpNum = Math.floor(tmpNum/10);
+    display.textContent = String(tmpNum);
 })
 
 decimal.addEventListener('click', () => {
