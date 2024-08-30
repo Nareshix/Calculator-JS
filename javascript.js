@@ -31,6 +31,8 @@ let operatorToBeUsed;
 let num1;
 let num2;
 
+let operatorUsed = false; 
+
 const clearAllColours = () => {
     operators.forEach(operator => {
         operator.style.backgroundColor = 'orange';
@@ -97,6 +99,7 @@ numbers.forEach(number => {
 // stores num1 and operator
 operators.forEach(operator => {
     operator.addEventListener('click', () => {
+        operatorUsed = true
         clearAllColours();
         operatorToBeUsed = operator.textContent;
         
@@ -110,14 +113,18 @@ operators.forEach(operator => {
     })
 });
 
+
 equal.addEventListener('click', () => {
-    num2 = Number(display.textContent);
-    if (num2 === 0 && operatorToBeUsed === '/'){
-    display.textContent = 'NaN';
+    if (operatorUsed){
+        num2 = Number(display.textContent);
+        if (num2 === 0 && operatorToBeUsed === '/'){
+        display.textContent = 'NaN';
+        }
+        else{
+            // round off to 10 d.p
+        display.textContent = Math.round(operation(num1,num2,operatorToBeUsed) * TEN_BILLION) /TEN_BILLION;
+        }
+        clearAllColours()
     }
-    else{
-        // round off to 10 d.p
-    display.textContent = Math.round(operation(num1,num2,operatorToBeUsed) * TEN_BILLION) /TEN_BILLION;
-    }
-    clearAllColours()
+    operatorUsed = false;
 })
