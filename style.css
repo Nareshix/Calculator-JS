@@ -13,7 +13,7 @@ body {
 #display {
     display: flex;
     height: 60px;
-    background-color: grey;
+    background-color: rgb(168, 166, 166);
 
 }
 #buttons {
