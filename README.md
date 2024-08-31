@@ -18,3 +18,4 @@ I plan on making it work for all operators (+,-,*,/)
 
 # Running the code
 git clone this project and run it from ur terminal or code editor
+or https://nareshix.github.io/calculator-JS/
