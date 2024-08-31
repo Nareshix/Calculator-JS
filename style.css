@@ -29,7 +29,6 @@ body {
     display: grid;
     grid-template-rows: repeat(5, 1fr);
     grid-template-columns: repeat(4,1fr);
-    color: black;
 }
 
 
@@ -44,20 +43,24 @@ body {
 
 .number{
     background-color: rgb(57, 121, 121);
+    color: black;
 }
 
 
 #decimal {
     background-color: rgb(57, 121, 121);
     font-weight: 900;
+    color: black;
 }
 
 #equal,
 .operation{
     background-color: orange;
+    color: black;
 }
 
 #delete,
 #clear{
     background-color: rgb(68, 195, 238);
+    color: black;
 }
