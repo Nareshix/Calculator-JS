@@ -29,6 +29,7 @@ body {
     display: grid;
     grid-template-rows: repeat(5, 1fr);
     grid-template-columns: repeat(4,1fr);
+    color: black;
 }
 
 
@@ -43,7 +44,6 @@ body {
 
 .number{
     background-color: rgb(57, 121, 121);
-    color: black;
 }
 
 
